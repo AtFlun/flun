@@ -6,14 +6,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url)),
   index = JSON.parse(fs.readFileSync(path.join(__dirname, 'packages.json'), 'utf8'));
 
 /**
- * 列出全部包的元数据
- * >查看定义:@see {@link list}
- * @returns {Array<{name: string, version: string, desc: string, install: string}>}
- */
-const list = () => Object.entries(index).filter(([name]) => !name.startsWith('_'))
-  .map(([name, entry]) => ({ name, ...entry }));
-
-/**
  * 查询单个包详情
  * >查看定义:@see {@link info}
  * @param {string} name 包名
@@ -24,6 +16,14 @@ const info = name => {
   const entry = index[name];
   return entry ? { name, ...entry } : null;
 };
+
+/**
+ * 列出全部包的元数据
+ * >查看定义:@see {@link list}
+ * @returns {Array<{name: string, version: string, desc: string, install: string}>}
+ */
+const list = () => Object.entries(index).filter(([name]) => !name.startsWith('_'))
+  .map(([name, entry]) => ({ name, ...entry }));
 
 /**
  * 按关键字搜索包名与描述
@@ -43,4 +43,4 @@ const search = keyword => {
  */
 const stats = () => index._stats || null;
 
-export { list, info, search, stats };
+export { info, list, search, stats };

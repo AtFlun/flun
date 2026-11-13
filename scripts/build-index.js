@@ -1,7 +1,7 @@
+import chalk from 'chalk';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import chalk from 'chalk';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url)), root = path.resolve(__dirname, '..'),
   pkgRoot = path.resolve(root, '..'), indexPath = path.join(root, 'packages.json'),

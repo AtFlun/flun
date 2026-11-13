@@ -1,9 +1,9 @@
 #!/usr/bin/env node
+import chalk from 'chalk';
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
-import chalk from 'chalk';
-import { list, info, search, stats } from '../index.js';
+import { info, list, search, stats } from '../index.js';
 import { resolveLatest } from '../net.js';
 
 const GOLD = '#B8860B',
