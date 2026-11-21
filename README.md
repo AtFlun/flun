@@ -127,6 +127,6 @@ ISC
 ## 贡献
 
 - 主页:[npm 包页面](https://www.npmjs.com/package/@flun/flun#readme)
-- 源码:[GitHub](https://github.com/OpenFlun/flun)
-- 中国:[gitee](https://gitee.com/OpenFlun/flun.git)
-- 问题反馈:[Issues](https://github.com/OpenFlun/flun/issues)
+- 源码:[GitHub](https://github.com/AtFlun/flun)
+- 中国:[gitee](https://gitee.com/AtFlun/flun.git)
+- 问题反馈:[Issues](https://github.com/AtFlun/flun/issues)

@@ -49,11 +49,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenFlun/flun.git"
+    "url": "git+https://github.com/AtFlun/flun.git"
   },
-  "gitee": "https://gitee.com/OpenFlun/flun.git",
-  "homepage": "https://github.com/OpenFlun/flun#readme",
+  "gitee": "https://gitee.com/AtFlun/flun.git",
+  "homepage": "https://github.com/AtFlun/flun#readme",
   "bugs": {
-    "url": "https://github.com/OpenFlun/flun/issues"
+    "url": "https://github.com/AtFlun/flun/issues"
   }
 }
